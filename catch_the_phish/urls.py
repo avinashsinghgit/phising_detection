@@ -25,5 +25,5 @@ urlpatterns = [
 ]
 
 
-urlpatterns += statisfiles_urlpatterns()
+urlpatterns += statisfiles_urlpatterns() # new
 
