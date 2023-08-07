@@ -63,17 +63,11 @@
 <body>
     <h1>Simple HTML Site with Search Query</h1>
 
-    <form>
+    <form action="" method="POST">
+        {% csrf_token %}
         <label for="searchInput">Search:</label>
         <input type="text" id="searchInput" name="q" placeholder="Enter your search query...">
         <button type="submit">Search</button>
-
-        <ul>
-            {% if result is not None %}
-                <li>{{ result }}</li>
-            {% endif %}
-        </ul>
-
     </form>
 
     <div id="searchResults">
