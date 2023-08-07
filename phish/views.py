@@ -4,6 +4,7 @@ from django.shortcuts import render
 from django.shortcuts import render, HttpResponse
 # Create your views here.
 
+
 def index(request):
     return render(request,"index.html")
 
@@ -42,6 +43,7 @@ def search(request):
         return render(request, "result.html", {'results':dict_output})
     
     return render(request, 'search.html')
+
 
 
 
